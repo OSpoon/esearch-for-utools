@@ -1,0 +1,38 @@
+{
+  "name": "zzk6denm",
+  "pluginName": "ESearch",
+  "description": "易搜-对接前端高频查询网站",
+  "author": "OSpoon",
+  "homepage": "https://github.com/OSpoon",
+  "version": "0.0.0",
+  "logo": "logo.png",
+  "preload": "./dist/preload.js",
+  "features": [
+    {
+      "code": "ESEARCH-NPM",
+      "explain": "易搜-NPM",
+      "cmds": ["npm"]
+    },
+    {
+      "code": "ESEARCH-Gitee",
+      "explain": "易搜-Gitee",
+      "cmds": ["gitee"]
+    },
+    {
+      "code": "ESEARCH-Juejin",
+      "explain": "易搜-Juejin",
+      "cmds": ["juejin"]
+    },
+    {
+      "code": "ESEARCH-LinuxCool",
+      "explain": "易搜-LinuxCool",
+      "cmds": ["linuxcool"]
+    },
+    {
+      "code": "ESEARCH-MDN",
+      "explain": "易搜-MDN",
+      "cmds": ["mdn"]
+    }
+  ],
+  "platform": ["win32", "darwin", "linux"]
+}
