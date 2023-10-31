@@ -7,9 +7,9 @@ import gzip from 'node-gzip'
 
 async function starter() {
   const { version } = await import('../package.json')
-  const pluginJSON = await import('../plugin.json')
-  pluginJSON.version = version
-  writeFileSync('../plugin.json', JSON.stringify(pluginJSON, null, 2))
+  let pluginJSON = await import('../plugin.json')
+  pluginJSON.default.version = version;
+  writeFileSync(join("plugin.json"), JSON.stringify(pluginJSON.default, null, 2))
   const { pluginName } = pluginJSON
 
   // 1. asar 打包

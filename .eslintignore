@@ -1,2 +1,6 @@
 node_modules/
 dist/
+scripts/
+eslint.config.mjs
+plugin.json
+package-lock.json
