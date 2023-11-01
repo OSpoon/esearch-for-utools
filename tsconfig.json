@@ -7,8 +7,8 @@
     "types": ["utools-api-types"],
     "strict": true,
     "strictNullChecks": true,
-    "outDir": "dist"
+    "outDir": "plugin/dist"
   },
-  "include": ["src/**/*.ts"],
+  "include": ["plugin/src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

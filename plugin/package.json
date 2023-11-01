@@ -1,30 +1,7 @@
 {
-  "name": "esearch-for-utools",
   "type": "commonjs",
-  "version": "0.0.1",
-  "description": "易搜-对接前端高频查询网站",
-  "author": "OSpoon zxin088@gmail.com",
-  "license": "MIT",
-  "homepage": "https://github.com/OSpoon/esearch-for-utools#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OSpoon/esearch-for-utools.git"
-  },
-  "bugs": "https://github.com/OSpoon/esearch-for-utools/issues",
-  "keywords": [],
-  "sideEffects": false,
-  "scripts": {
-    "build": "npx rimraf ./dist ./output && npx tsc && npx esno ./scripts/build.ts"
-  },
   "dependencies": {
     "axios": "^1.6.0",
     "jsdom": "^22.1.0"
-  },
-  "devDependencies": {
-    "@types/jsdom": "^21.1.4",
-    "asar": "^3.2.0",
-    "node-gzip": "^1.1.2",
-    "typescript": "^5.2.2",
-    "utools-api-types": "^4.0.0"
   }
 }
