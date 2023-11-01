@@ -51,7 +51,7 @@ async function gitee(document: Document) {
 }
 
 async function juejin(document: { data: any }) {
-  const sections = document.data
+  const sections = document.data || []
   const result: Array<Result> = []
 
   sections.forEach((section: { title_highlight: any; content_highlight: any; result_model: { article_id: any } }) => {
@@ -79,7 +79,7 @@ async function linuxcool(document: Document) {
 }
 
 async function mozilla(document: any) {
-  const sections = document.documents
+  const sections = document.documents || []
   const result: Array<Result> = []
 
   sections.forEach((section: { title: any; summary: any; mdn_url: any }) => {
