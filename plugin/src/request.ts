@@ -1,4 +1,4 @@
-import axios from 'axios'
+import fetch from 'node-fetch'
 import { JSDOM } from 'jsdom'
 import { clearLabel } from './utils/index'
 
@@ -9,7 +9,7 @@ interface Result {
 }
 
 async function request(requestUrl: string) {
-  return (await axios.get(requestUrl)).data
+  return (await fetch(requestUrl)).text()
 }
 
 async function parse(html: string) {
