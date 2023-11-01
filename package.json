@@ -14,7 +14,8 @@
   "keywords": [],
   "scripts": {
     "prepare": "simple-git-hooks && cd ./plugin && npm i",
-    "build": "bumpp && rimraf ./plugin/dist ./output && tsc && esno ./scripts/build.ts",
+    "build": "rimraf ./plugin/dist ./output && tsc && esno ./scripts/build.ts",
+    "publish": "bumpp",
     "lint": "eslint .",
     "test": "vitest",
     "test:ci": "vitest run",

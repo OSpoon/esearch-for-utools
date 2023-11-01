@@ -4,7 +4,7 @@
   "description": "易搜-对接前端高频查询网站",
   "author": "OSpoon",
   "homepage": "https://github.com/OSpoon",
-  "version": "0.0.1",
+  "version": "0.0.2-beta.1",
   "logo": "logo.png",
   "preload": "./dist/preload.js",
   "features": [
